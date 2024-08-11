@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { TresCanvas } from "@tresjs/core";
 
-import type { Output } from "../../types/output";
+import type { Output } from "../../../../common/types/output";
 import { OrbitControls } from "@tresjs/cientos";
 import Col from "./Col.vue";
-import { Vector } from "../../types/vector";
+import { Vector } from "../../../../common/types/vector";
 
 type Props = {
   output: Output;

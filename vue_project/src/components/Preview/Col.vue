@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Col } from "../../types/output";
+import type { Col } from "../../../../common/types/output";
 import Key from "./Key.vue";
 
 type Props = {

@@ -1,7 +1,7 @@
-// https://www.airc.aist.go.jp/dhrt/hand/data/list.html
-import { Vector } from "@/types/vector";
 import type { Input } from "../types/input";
 import type { Output } from "../types/output";
+// https://www.airc.aist.go.jp/dhrt/hand/data/list.html
+import { Vector } from "../types/vector";
 
 main();
 
