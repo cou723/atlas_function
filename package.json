@@ -1,0 +1,17 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "workspaces": [
+    "react_project",
+    "vue_project",
+    "common"
+  ],
+  "dependencies": {
+    "@types/node": "^22.2.0",
+    "three": "^0.167.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.167.1",
+    "typescript": "^5.2.2"
+  }
+}

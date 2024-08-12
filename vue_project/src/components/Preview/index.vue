@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import { TresCanvas } from "@tresjs/core";
 
-import type { Output } from "../../../../common/types/output";
+import type { Output } from "@common/types/output";
 import { OrbitControls } from "@tresjs/cientos";
 import Col from "./Col.vue";
-import { Vector } from "../../../../common/types/vector";
 
 type Props = {
   output: Output;
@@ -15,12 +14,8 @@ defineProps<Props>();
 
 <template>
   <TresCanvas window-size clear-color="#ffffff">
-    <TresPerspectiveCamera
-      :position="new Vector(0, 100, -100).toVector3Array()"
-      :rotation="new Vector(0, 0, 0).toVector3Array()"
-    />
     <OrbitControls />
-    <AxesHelper :size="5" />
+    <AxesHelper :size="100" />
     <Col :col="output.left.subIndex" />
     <Col :col="output.left.index" />
     <Col :col="output.left.middle" />

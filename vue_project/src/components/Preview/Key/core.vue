@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import { keySize, keySubColor } from "@common/constant";
+
 type Props = {
   position: [number, number, number];
   rotation: [number, number, number];
-  color?:string
+  color?: string;
 };
 
 defineProps<Props>();
@@ -10,7 +12,7 @@ defineProps<Props>();
 
 <template>
   <TresMesh :position="position" :rotation="rotation">
-    <TresBoxGeometry :args="[14, 1, 14]" />
-    <TresMeshStandardMaterial :color="color??'#010101'" />
+    <TresBoxGeometry :args="[keySize, 1, keySize]" />
+    <TresMeshStandardMaterial :color="color ?? keySubColor" />
   </TresMesh>
 </template>

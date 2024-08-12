@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Preview from "./components/Preview/index.vue";
-import { func } from "../../common/libs/function";
-import type { Input } from "../../common/types/input";
+import Preview from "@/components/Preview/index.vue";
+import { func } from "@common/libs/function";
+import type { Input } from "@common/types/input";
 
 const output = func({} as Input);
 </script>

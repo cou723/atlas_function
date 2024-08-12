@@ -29,4 +29,4 @@ type ColVectors = {
 	bottom: Vectors;
 };
 
-type Vectors = { pos: Vector; dir: Vector };
+export type Vectors = { pos: Vector; dir: Vector };
